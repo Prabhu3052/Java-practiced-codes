@@ -13,6 +13,7 @@ public class primenumrange {
                 System.out.println(i);
             }
         }
+        d.close();
     }
     public static boolean isPrime(int a){
         if (a<=1){
