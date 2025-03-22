@@ -1,3 +1,6 @@
+
+import java.util.*;
+
 public class passcal {
     public static void printPascalsTriangle(int n) {
         for (int i = 0; i < n; i++) {
@@ -8,10 +11,13 @@ public class passcal {
             }
             System.out.println();
         }
-    }
+    } 
 
     public static void main(String[] args) {
-        int rows = 5; // Change this value for a different number of rows
+        Scanner d = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int rows = d.nextInt();
+        d.close();
         printPascalsTriangle(rows);
     }
 }
