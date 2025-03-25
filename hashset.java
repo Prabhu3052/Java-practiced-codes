@@ -8,6 +8,7 @@ public class hashset{
         set.add(77);
         set.add(13);
         set.add(99);
+        set.remove(99);
         for (int i=0;i<=100;i++){
             if (set.contains(i)){
                 System.out.println(i+" is in the set");
@@ -17,5 +18,13 @@ public class hashset{
             }
 
         }
+        // set.clear();
+        if(set.contains(12)){
+            System.out.println("The set is not empty");
+        }
+        else{
+            System.out.println("The set is  empty");
+        }
     }
+    
 }
